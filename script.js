@@ -1,14 +1,14 @@
-fetch("./data.json")
-  .then((res) => res.json())
-  .then((data) => myFunc(data));
+// fetch("./data.json")
+//   .then((res) => res.json())
+//   .then((data) => myFunc(data));
 
-const months = document.getElementById("months");
+// const months = document.getElementById("months");
 
-function myFunc(data) {
-  data.forEach((item) => {
-    let el = document.createElement("div");
-    el.classList.add("month");
-    el.innerText = item.day;
-    months.appendChild(el);
-  });
-}
+// function myFunc(data) {
+//   data.forEach((item) => {
+//     let el = document.createElement("div");
+//     el.classList.add("month");
+//     el.innerText = item.day;
+//     months.appendChild(el);
+//   });
+// }
