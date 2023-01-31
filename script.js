@@ -1,14 +1,20 @@
-// fetch("./data.json")
-//   .then((res) => res.json())
-//   .then((data) => myFunc(data));
+// let dataArr = [];
+fetch("./data.json")
+  .then((res) => res.json())
+  .then((data) => buildChart(data));
 
 // const months = document.getElementById("months");
 
-// function myFunc(data) {
-//   data.forEach((item) => {
-//     let el = document.createElement("div");
-//     el.classList.add("month");
-//     el.innerText = item.day;
-//     months.appendChild(el);
-//   });
-// }
+function buildChart(data) {
+  if (data) {
+    console.log(data);
+    for (let i = 0; i < data.length; i++) {
+      let el = document.getElementsByClassName("month")[i];
+      el.innerText = data[i].day;
+      let toolEl = document.getElementsByClassName("tooltiptext")[i];
+      toolEl.innerText = data[i].amount;
+    }
+  }
+}
+
+buildChart();
