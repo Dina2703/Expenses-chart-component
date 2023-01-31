@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+:root {
+  --primary-red: hsl(10, 79%, 65%);
+  --primary-cyan: hsl(186, 34%, 60%);
+  --dark-brown: hsl(25, 47%, 15%);
+  --medium-brown: hsl(28, 10%, 53%);
+  --cream: hsl(27, 66%, 92%);
+  --orange: hsl(33, 100%, 98%);
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  background-color: var(--cream);
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 450px;
+  height: 550px;
+  margin: auto;
+  padding: 8px;
+}
+
+.header span {
+  display: block;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 0.8rem 1.3rem;
+  border-radius: 15px;
+  color: #fff;
+  background-color: var(--primary-red);
+  align-items: center;
+  height: 66px;
+}
+
+.header .logo {
+  text-align: right;
+}
+
+.logo > img {
+  width: 65px;
+}
+
+.header div > *:first-child {
+  font-size: 14px;
+}
+
+.header span:last-child {
+  font-weight: 700;
+  margin-top: 7px;
+
+  font-size: large;
+}
+
+.body {
+  margin-top: 0.8rem;
+  padding: 0.8rem 1.3rem;
+  background-color: #fff;
+  border-radius: 15px;
+  height: 400px;
+}
+
+.body > *:first-child {
+  font-weight: 700;
+}
