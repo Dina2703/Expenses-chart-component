@@ -76,3 +76,46 @@ body {
 .body > *:first-child {
   font-weight: 700;
 }
+
+#months {
+  height: 250px;
+
+  vertical-align: bottom;
+}
+
+.expenses {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+  padding: 25px 0;
+  border-top: 1px solid var(--medium-brown);
+}
+
+.expenses div {
+  flex: 1;
+}
+
+.total_month_expenses > *:first-child,
+.compare > *:last-child {
+  color: var(--medium-brown);
+  font-size: 14px;
+}
+
+.total_month_expenses > *:last-child {
+  font-weight: 700;
+  font-size: xx-large;
+  margin-top: 6px;
+}
+
+.compare {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: end;
+}
+
+.compare > *:first-child {
+  font-size: smaller;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
