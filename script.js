@@ -12,9 +12,9 @@ function buildChart(data) {
       let el = document.getElementsByClassName("month")[i];
       el.innerText = data[i].day;
       let toolEl = document.getElementsByClassName("tooltiptext")[i];
-      toolEl.innerText = data[i].amount;
+      toolEl.innerText = "$" + data[i].amount;
+      let bar = document.getElementsByClassName("bar")[i];
+      bar.style.height = data[i].amount + "%";
     }
   }
 }
-
-buildChart();
