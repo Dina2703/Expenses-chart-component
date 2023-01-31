@@ -127,7 +127,6 @@ body {
 .bars {
   color: var(--medium-brown);
   font-size: 14px;
-  background-color: beige;
   height: 230px;
 }
 
@@ -159,7 +158,7 @@ body {
   bottom: 24px;
   border-radius: 4px;
   cursor: pointer;
-  transition: background 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
 }
 
 .bar .tooltiptext {
@@ -184,5 +183,5 @@ body {
 }
 
 .bars .bar:hover {
-  background: var(--primary-cyan);
+  opacity: 0.8;
 }
